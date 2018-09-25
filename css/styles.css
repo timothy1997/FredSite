@@ -97,35 +97,32 @@ i {
 }
 
 nav {
-  background-color: red;
+  /* background-color: red; */
   text-align: center;
+  width: 85%;
+  margin: 0% auto;
+}
+
+nav div {
+  width: 18em;
+  height: 12em;
+  display: inline-block;
+  background-size: cover;
+  margin: 0% 2%;
 }
 
 #image1 {
-  width: 50px;
-  height: 50px;
-  display: inline-block;
-}
-
-div img {
-  width: 100%;
-  height: auto;
+  background-image: url('/home/timothy/Documents/CS Website/images/university commons.jpg');
 }
 
 #image2 {
-  width: 50px;
-  height: 50px;
-  display: inline-block;
+  background-image: url('/home/timothy/Documents/CS Website/images/futuristic computer.jpg');
 }
 
 #image3 {
-  width: 50px;
-  height: 50px;
-  display: inline-block;
+  background-image: url('/home/timothy/Documents/CS Website/images/dunkirk erie.jpg');
 }
 
 #image4 {
-  width: 50px;
-  height: 50px;
-  display: inline-block;
+  background-image: url('/home/timothy/Documents/CS Website/images/professor.jpg');
 }
