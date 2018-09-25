@@ -2,9 +2,9 @@ let mainImage = document.querySelector("#main-image");
 let mainMessage = document.querySelector("#main-image-tag");
 let interval = setInterval(changeImage, 8000);
 
-let images = ["url('/home/timothy/Documents/CS Website/images/atom-rails.jpg')",
-              "url('/home/timothy/Documents/CS Website/images/computers.jpg')",
-              "url('/home/timothy/Documents/CS Website/images/people.jpg')"]
+let images = ["linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/home/timothy/Documents/CS Website/images/atom-rails.jpg')",
+              "linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/home/timothy/Documents/CS Website/images/computers.jpg')",
+              "linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/home/timothy/Documents/CS Website/images/people.jpg')"]
 
 let tags = ["Computer Science Club: A Chance to Explore Computer Science.",
             "Test Your Skills in Coding Competitions",
@@ -28,7 +28,8 @@ function changeImage(back=false) {
   }
 
   $(mainImage).fadeToggle("slow", function() {
-  mainImage.style.backgroundImage = images[currentImage];
+  mainImage.style.background = images[currentImage];
+  mainImage.style.backgroundSize = "cover";
   mainMessage.innerHTML = tags[currentImage];});
   $(mainImage).fadeToggle("slow");
 }
