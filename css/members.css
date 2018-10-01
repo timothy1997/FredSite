@@ -1,0 +1,48 @@
+html, body {
+  text-align: center;
+}
+
+#image-div {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/home/timothy/Documents/CS Website/images/members.jpeg');
+  background-size: cover;
+  width: 70em;
+  height: 35em;
+  display: inline-block;
+  margin: 2% 0% 1% 0%;
+  color: white;
+}
+
+p {
+  font-size: 2.4em;
+  font-weight: bold;
+  display: inline-block;
+  float: left;
+  margin: 10% 0% 0% 5%;
+}
+
+#member-div {
+  display: block;
+  width: 100%;
+}
+
+#member-list {
+  padding: 0%;
+}
+
+h2 {
+  font-size: 3em;
+  color: rgba(0,56,168,1);
+  border-bottom: 1px rgba(0,56,168,1) solid;
+  display: inline-block;
+  margin: 1% 0% 1% 0%;
+}
+
+#member-list li {
+  list-style-type: none;
+  margin: 2%;
+  font-size: 2em;
+}
+
+a {
+  text-decoration: none;
+}
