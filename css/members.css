@@ -18,6 +18,10 @@ p {
   display: inline-block;
   float: left;
   margin: 10% 0% 0% 5%;
+
+  position: relative;
+  -webkit-animation: mymove 1s; /* Safari 4.0 - 8.0 */
+  animation: mymove 1s;
 }
 
 #member-div {
@@ -45,4 +49,16 @@ h2 {
 
 a {
   text-decoration: none;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    from {right: -1000px;}
+    to {right: 0px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {right: -1000px;}
+    to {right: 0px;}
 }

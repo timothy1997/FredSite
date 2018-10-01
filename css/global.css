@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=K2D|Roboto');
+
 html, body {
   margin: 0%;
+  font-family: 'K2D', sans-serif;
 }
 
 #title-bar {
@@ -30,6 +33,7 @@ html, body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-family: 'K2D', sans-serif;
 }
 
 #title-bar li a:hover {
