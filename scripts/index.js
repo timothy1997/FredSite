@@ -33,3 +33,20 @@ function changeImage(back=false) {
   mainMessage.innerHTML = tags[currentImage];});
   $(mainImage).fadeToggle("slow");
 }
+
+function navigateAway(value) {
+  console.log(value.innerHTML);
+  if (value.innerHTML.includes("image1")) {
+    console.log("Clicked Image 1");
+    window.location.href = 'webpages/news.htm';
+  } else if(value.innerHTML.includes("image2")) {
+    console.log("Clicked Image 2");
+    window.location.href = 'webpages/contact.htm';
+  } else if(value.innerHTML.includes("image3")) {
+    console.log("Clicked Image 3");
+    window.location.href = 'webpages/members.htm';
+  } else {
+    console.log("Clicked Image 4");
+    window.location.href = 'webpages/about.htm';
+  }
+}
