@@ -2,26 +2,36 @@ html, body {
   text-align: center;
 }
 
+#members-heading-statement {
+  margin-bottom: 2%;
+}
+
+#members-heading-statement p {
+  font-size: 2.4em;
+  font-weight: normal;
+  display: inline-block;
+  margin: 0%;
+}
+
+#members-heading-aside {
+  width: 50%;
+  margin: 0% auto;
+  text-align: center;
+}
+
+#members-heading-aside p {
+  font-size: 1.2em;
+  font-weight: normal;
+  display: inline-block;
+  margin: 0%;
+}
+
 #image-div {
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/home/timothy/Documents/CS Website/images/members.jpeg');
   background-size: cover;
-  width: 70em;
+  width: 100%;
   height: 35em;
   display: inline-block;
-  margin: 2% 0% 1% 0%;
-  color: white;
-}
-
-p {
-  font-size: 2.4em;
-  font-weight: bold;
-  display: inline-block;
-  float: left;
-  margin: 10% 0% 0% 5%;
-
-  position: relative;
-  -webkit-animation: mymove 1s; /* Safari 4.0 - 8.0 */
-  animation: mymove 1s;
 }
 
 #member-div {
@@ -43,7 +53,7 @@ h2 {
 
 #member-list li {
   list-style-type: none;
-  margin: 2%;
+  margin: 8%;
   font-size: 2em;
 }
 
@@ -51,14 +61,32 @@ a {
   text-decoration: none;
 }
 
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes mymove {
-    from {right: -1000px;}
-    to {right: 0px;}
+.li-container {
+  height: 2em;
+  width: 100%;
+  padding: 2%;
+  border-bottom: 1px black solid;
 }
 
-/* Standard syntax */
-@keyframes mymove {
-    from {right: -1000px;}
-    to {right: 0px;}
+.bottom {
+height: 100%;
+width: 100%;
+border-bottom: 1px black solid;
+}
+
+.left {
+  font-weight: normal;
+  width: 40%;
+  height: 100%;
+  float: left;
+  display: inline-block;
+  /* font-size: 2.5em; */
+}
+
+.right {
+  /* font-size: 1.8em; */
+  width: 60%;
+  height: 100%;
+  display: inline-block;
+  float: right;
 }

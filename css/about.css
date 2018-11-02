@@ -1,49 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+html, body {
+  margin: 0%;
+}
+
+h4 {
+  font-weight: normal;
+}
+
 #about-image {
-  margin: 2% 0% 0% 0%;
+  margin: 0%;
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/home/timothy/Documents/CS Website/images/about.jpg');
   width: 100%;
   height: 45em;
   background-size: cover;
 }
 
-#about-image-message {
-  display: inline-block;
-  margin: 4%;
-}
-
-h3 {
-  color: white;
-  font-size: 4em;
-  font-weight: bold;
-  display: none;
-}
-
-#about-image-p-message {
-  color: white;
-  font-size: 1.4em;
-  font-weight: bold;
-  display: none;
-}
-
-#about-notes {
-  width: 85%;
-  padding: 0%;
+#about-message-div {
+  text-align: center;
+  width: 60%;
   margin: 0% auto;
-  text-align: left;
+  padding: 2%;
+  padding-top: 0%;
 }
 
-#about-notes li {
-  list-style-type: none;
-  display: inline;
-  width: 25%;
-  margin: 0% 2%;
+#about-message {
+  color: black;
+  font-size: 2.5em;
+  font-weight: normal;
 }
 
-#about-notes li div {
+.about-section {
+  height: 20em;
+  width: 85%;
+  margin: 0% auto;
+  margin-top: 4%;
+  border-bottom: 1px black solid;
+  text-align: center;
+}
+
+#about-our-members {
+  border-bottom: none;
+}
+
+.left {
+  font-weight: normal;
+  width: 40%;
+  height: 100%;
+  float: left;
   display: inline-block;
-  width: 25%;
+  font-size: 2.5em;
 }
 
-h4 {
-  font-size: 2em;
+.right {
+  font-size: 1.8em;
+  width: 60%;
+  height: 100%;
+  display: inline-block;
+  float: right;
 }

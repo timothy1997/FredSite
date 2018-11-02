@@ -5,7 +5,7 @@
 }
 
 #image-container {
-  margin: 4em 0em;
+  margin-bottom: 4%;
   display: block;
   overflow: hidden;
   position: relative;
@@ -21,6 +21,7 @@
   width: 85%;
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/home/timothy/Documents/CS Website/images/atom-rails.jpg');
   background-size: cover;
+  display: none;
 }
 
 #main-image-tag {
@@ -28,7 +29,7 @@
   padding: 2em 2em;
   float: left;
   color: white;
-  font-size: 2.5em;
+  font-size: 3em;
 }
 
 #next-arrows-div {
@@ -60,44 +61,112 @@ i {
 }
 
 nav {
-  /* background-color: red; */
   text-align: center;
   width: 85%;
   margin: 0% auto;
+  display: none;
+  height: 1500px;
 }
 
 nav div {
-  width: 18em;
-  height: 12em;
-  display: inline-block;
-  background-size: cover;
-  margin: 0% 2%;
+  height: 33%;
+  text-align: left;
 }
 
-#image1 {
+nav div h3 {
+  margin-left: 2%;
+}
+
+nav div p {
+  display: inline-block;
+  text-align: left;
+  margin-left: 2%;
+}
+
+.nav-picture-1 {
+  display: inline-block;
+  float: left;
+  height: 80%;
+  width: 40%;
+  margin-left: 2%;
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/home/timothy/Documents/CS Website/images/university commons.jpg');
   background-size: cover;
+  -webkit-transition: width .5s;
+  transition: width .5s;
 }
 
-#image2 {
+.nav-picture-1:hover {
+  width: 40.5%;
+}
+
+.nav-picture-2 {
+  display: inline-block;
+  float: right;
+  height: 80%;
+  width: 40%;
+  margin-right: 2%;
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/home/timothy/Documents/CS Website/images/futuristic computer.jpg');
   background-size: cover;
+  -webkit-transition: width .5s;
+  transition: width .5s;
 }
 
-#image3 {
+.nav-picture-2:hover {
+  width: 40.5%;
+}
+
+.nav-picture-3 {
+  display: inline-block;
+  float: left;
+  height: 80%;
+  width: 40%;
+  margin-left: 2%;
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/home/timothy/Documents/CS Website/images/dunkirk erie.jpg');
   background-size: cover;
+  -webkit-transition: width .5s;
+  transition: width .5s;
 }
 
-#image4 {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/home/timothy/Documents/CS Website/images/professor.jpg');
-  background-size: cover;
+.nav-picture-3:hover {
+  width: 40.5%;
+}
+
+.nav-h3 {
+  display: inline-block;
+  font-size: 3em;
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+}
+
+.nav-p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  font-size: 1.5em;
+  display: inline-block;
+  width: 50%;
 }
 
 h3 {
   text-align: left;
 }
 
-p {
-  text-align: left;
+@media (max-width: 780px) {
+  .nav-h3 {
+    display: block;
+    font-size: 3em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+  }
+
+  .nav-p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    font-size: 1.5em;
+    display: block;
+    width: 50%;
+  }
+
+  .nav-picture {
+    display: none;
+  }
 }

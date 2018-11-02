@@ -3,54 +3,64 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Fredonia Computer Science Club</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCSC - Welcome</title>
     <link rel="stylesheet" type="text/css" href="css/global.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script src="scripts/jquery-3.3.1.min.js"></script>
   </head>
   <body>
-
-    <ul id="title-bar">
-      <li><h1 id="title-bar-heading">Fredonia Computer Science Club</h1></li>
-      <li><a href="index.htm">Home</a></li>
-      <li><a href="webpages/news.htm">News</a></li>
-      <li><a href="webpages/contact.htm">Contact</a></li>
-      <li><a href="webpages/members.htm">Members</a></li>
-      <li><a href="webpages/about.htm">About</a></li>
-    </ul>
-
-    <div id="image-container">
-      <div id="main-image" class="center cs-image">
-        <p id="main-image-tag">Computer Science Club: A Chance to Explore Computer Science.</p>
-        <div id="next-arrows-div">
-          <i class="arrow left" onclick="changeImage(true)"></i>
-          <i class="arrow right" onclick="changeImage()"></i>
+    <div class="title-bar-div">
+      <ul id="title-bar">
+        <h1 id="title-bar-heading">FCSC</h1></li>
+        <li><a href="index.htm">Home</a></li>
+        <li><a href="webpages/contact.htm">Contact</a></li>
+        <li><a href="webpages/members.htm">Members</a></li>
+        <li><a href="webpages/about.htm">About</a></li>
+      </ul>
+      <div class="dropdown"> <!-- This only shows when title is within a certain witdth -->
+        <span>Mouse Over Me</span>
+        <div class="dropdown-content">
+          <a href="index.htm">Home</a>
+          <a href="webpages/contact.htm">Contact</a>
+          <a href="webpages/members.htm">Members</a>
+          <a href="webpages/about.htm">About</a>
         </div>
       </div>
     </div>
 
-    <nav>
-      <div onclick="navigateAway(this)">
-        <div id="image1"></div>
-        <h3>FCSC News</h3>
-        <p>See the latest in FSCS news, activities, and events.</p>
+    <main>
+      <div id="image-container">
+        <div id="main-image" class="center cs-image">
+          <p id="main-image-tag">Fredonia Computer Science Club</p>
+          <div id="next-arrows-div">
+            <i class="arrow left" onclick="changeImage(true)"></i>
+            <i class="arrow right" onclick="changeImage()"></i>
+          </div>
+        </div>
       </div>
-      <div onclick="navigateAway(this)">
-        <div id="image2"></div>
-        <h3>Contact</h3>
-        <p>How to contact the Fredonia Computer Science Club</p>
-      </div>
-      <div onclick="navigateAway(this)">
-        <div id="image3"></div>
-        <h3>Members</h3>
-        <p>View the FCSC members and biographies.</p>
-      </div>
-      <div onclick="navigateAway(this)">
-        <div id="image4"></div>
-        <h3>About</h3>
-        <p>About the Fredonia Computer Science Club.</p>
-      </div>
-    </nav>
+
+      <nav>
+        <div class="nav-section-1">
+          <div onclick="navigateAway(this)" class="nav-picture-1 nav-picture"></div>
+          <h3 class="nav-h3">About FCSC</h3>
+          <p class="nav-p">Learn what the Fredonia Computer Science Club is all about. Our
+          goals, motivations, and impact.</p>
+        </div>
+        <div class="nav-section-2">
+          <div onclick="navigateAway(this)" class="nav-picture-2 nav-picture"></div>
+          <h3 class="nav-h3">FCSC Members</h3>
+          <p class="nav-p">Meet the people that make the Fredonia Computer Science
+          Club what it is by clicking the picture. </p>
+        </div>
+        <div class="nav-section-3">
+          <div onclick="navigateAway(this)" class="nav-picture-3 nav-picture"></div>
+          <h3 class="nav-h3">Contact FCSC</h3>
+          <p class="nav-p">Get in contact with the Fredonia Computer Science Club by clicking
+          here.</p>
+        </div>
+      </nav>
+    </main>
 
   </body>
   <script src="scripts/index.js"></script>

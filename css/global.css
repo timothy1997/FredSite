@@ -1,30 +1,49 @@
 @import url('https://fonts.googleapis.com/css?family=K2D|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
 html, body {
   margin: 0%;
-  font-family: 'K2D', sans-serif;
+  /* color: rgba(0,56,168,1); */
+}
+
+main {
+  margin-top: 125px;
+}
+
+.title-bar-div {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  width: 100%;
+  text-align: center;
+  color: blue;
 }
 
 #title-bar {
   list-style-type: none;
   margin: 0%;
   padding: 1%;
-  overflow: hidden;
-  background-color: rgba(0,56,168,1);
+  width: 85%;
+  margin: 0 auto;
 }
 
 #title-bar-heading {
   text-align: center;
-  font-size: 2.5em;
+  font-size: 3em;
   color: white;
   float: left;
   display: inline;
   margin: 0%;
+  color: rgba(0,56,168,1);
 }
 
 #title-bar li {
   float: left;
-  margin: 0% 1%;
+  margin: 0% 2%;
+  margin-left: 0%;
 }
 
 #title-bar li a {
@@ -34,8 +53,71 @@ html, body {
   padding: 14px 16px;
   text-decoration: none;
   font-family: 'K2D', sans-serif;
+  color: rgba(0,56,168,1);
+  font-size: 1.2em;
 }
 
 #title-bar li a:hover {
   background-color: #111;
+}
+
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+footer {
+  background: #f6f6f6;
+  margin: 0%;
+  height: 5em;
+}
+
+h5 {
+  margin: 0%;
+  display: inline-block;
+  font-size: 1.5em;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer li {
+  display: inline-block;
+}
+
+footer p {
+
+}
+
+.dropdown {
+  display: none;
+}
+
+@media (max-width: 670px) {
+  #title-bar li a {
+    display: none;
+  }
+
+  .dropdown {
+    display: inline-block;
+    position: relative;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 }

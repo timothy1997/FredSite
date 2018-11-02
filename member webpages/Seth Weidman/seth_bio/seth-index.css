@@ -1,0 +1,92 @@
+html{
+    background-image: url("stars.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    text-align: center;
+    font-family:'Roboto', sans-serif;
+}
+/*body{
+  min-width:460px;
+  _width: expression( document.body.clientWidth > 460 ? "460px" : "auto" );
+}*/
+#intro{
+  font-size: 17px;
+  animation: flyTop 0.8s ease-out;
+  transition: transform .2s;
+}
+#intro h1{
+  margin-left: 100px;
+  margin-right: 100px;
+  transition: transform .2s;
+}
+#intro h1:hover{
+  transform: scale(1.15);
+}
+img{
+  border: solid;
+  border-radius: 6px;
+  -webkit-animation: fadeIn 1.5s;
+  transition: transform .2s;
+}
+img:hover{
+  transform: scale(1.08);
+}
+#bio{
+  float:right;
+  margin-left: 5%;
+  margin-right: 5%;
+  -webkit-animation: fadeIn 1.5s;
+  font-size: 18px;
+}
+#bio #a, #c{
+  animation: flyLeft 0.8s ease-out;
+}
+#bio #a{
+  transition: transform .2s;
+}
+#bio #a:hover{
+  transform: scale(1.08);
+}
+#bio #b{
+  transition: transform .2s;
+  animation: flyRight 0.8s ease-out;
+}
+#bio #b:hover{
+  transform: scale(1.08);
+}
+#bio #c{
+  transition: transform .2s;
+}
+#bio #c:hover{
+  transform: scale(1.08);
+}
+@media only screen and (min-width: 1000px) {
+    #bio{
+      /*margin-left: 15%;
+      margin-right: 15%;*/
+      margin-left: 225px;
+      margin-right: 225px;
+    }
+}
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+@keyframes flyRight {
+  0%{transform: translateX(100%);}
+  100% {transform: translateX(0%);}
+}
+@keyframes flyLeft {
+  0%{transform: translateX(-100%);}
+  100% {transform: translateX(0%);}
+}
+@keyframes flyTop {
+  0%{transform: translateY(-100%);}
+  100% {transform: translateY(0%);}
+}
+@keyframes flyBottom {
+  0%{transform: translateY(100%);}
+  100% {transform: translateY(0%);}
+}

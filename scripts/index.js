@@ -1,3 +1,9 @@
+$( document ).ready(function() {
+  console.log("Fading In...")
+  $(document.querySelector("#main-image")).fadeIn(700);
+  $(document.querySelector("nav")).fadeIn(1400);
+});
+
 let mainImage = document.querySelector("#main-image");
 let mainMessage = document.querySelector("#main-image-tag");
 let interval = setInterval(changeImage, 8000);
@@ -6,7 +12,7 @@ let images = ["linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/
               "linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/home/timothy/Documents/CS Website/images/computers.jpg')",
               "linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/home/timothy/Documents/CS Website/images/people.jpg')"]
 
-let tags = ["Computer Science Club: A Chance to Explore Computer Science.",
+let tags = ["Fredonia Computer Science Club",
             "Test Your Skills in Coding Competitions",
             "Work on Fun Projects with your Peers!"]
 
