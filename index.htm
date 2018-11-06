@@ -10,23 +10,30 @@
     <script src="scripts/jquery-3.3.1.min.js"></script>
   </head>
   <body>
+
     <div class="title-bar-div">
       <ul id="title-bar">
-        <h1 id="title-bar-heading">FCSC</h1></li>
+        <!-- <li> -->
+          <div class="dropdown">
+            <div onclick="dropDownClick()" class="hamburger">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="dropdown-content">
+              <a href="index.htm">Home</a>
+              <a href="webpages/contact.htm">Contact</a>
+              <a href="webpages/members.htm">Members</a>
+              <a href="webpages/about.htm">About</a>
+            </div>
+          </div>
+        <!-- </li> -->
+        <li><h1 id="title-bar-heading">FCSC</h1></li>
         <li><a href="index.htm">Home</a></li>
         <li><a href="webpages/contact.htm">Contact</a></li>
         <li><a href="webpages/members.htm">Members</a></li>
         <li><a href="webpages/about.htm">About</a></li>
       </ul>
-      <div class="dropdown"> <!-- This only shows when title is within a certain witdth -->
-        <span>Mouse Over Me</span>
-        <div class="dropdown-content">
-          <a href="index.htm">Home</a>
-          <a href="webpages/contact.htm">Contact</a>
-          <a href="webpages/members.htm">Members</a>
-          <a href="webpages/about.htm">About</a>
-        </div>
-      </div>
     </div>
 
     <main>
@@ -63,5 +70,7 @@
     </main>
 
   </body>
+
+  <script src="scripts/global.js"></script>
   <script src="scripts/index.js"></script>
 </html>

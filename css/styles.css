@@ -19,7 +19,7 @@
 
 #main-image {
   width: 85%;
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/home/timothy/Documents/CS Website/images/atom-rails.jpg');
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/atom-rails.jpg');
   background-size: cover;
   display: none;
 }
@@ -89,7 +89,7 @@ nav div p {
   height: 80%;
   width: 40%;
   margin-left: 2%;
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/home/timothy/Documents/CS Website/images/university commons.jpg');
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/university commons.jpg');
   background-size: cover;
   -webkit-transition: width .5s;
   transition: width .5s;
@@ -105,7 +105,7 @@ nav div p {
   height: 80%;
   width: 40%;
   margin-right: 2%;
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/home/timothy/Documents/CS Website/images/futuristic computer.jpg');
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/futuristic computer.jpg');
   background-size: cover;
   -webkit-transition: width .5s;
   transition: width .5s;
@@ -121,7 +121,7 @@ nav div p {
   height: 80%;
   width: 40%;
   margin-left: 2%;
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/home/timothy/Documents/CS Website/images/dunkirk erie.jpg');
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/dunkirk erie.jpg');
   background-size: cover;
   -webkit-transition: width .5s;
   transition: width .5s;
